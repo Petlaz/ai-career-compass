@@ -13,7 +13,37 @@ short_description: Build AI Career Compass
 
 # 🧭 AI Career Compass
 
+![AI Career Compass Demo](space_thumbnail.png)
+
+[![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face%20Space-AI%20Career%20Compass-blue)](https://huggingface.co/spaces/petlaz/ai-career-compass)
+[![Gradio App](https://img.shields.io/badge/Powered%20by-Gradio-orange)](https://gradio.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Deploy to HF Space](https://img.shields.io/badge/Deploy-Hugging%20Face%20Space-yellowgreen)](https://huggingface.co/spaces/create)
+
 Skill-to-Opportunity Recommender & Semantic Search Engine
+
+---
+
+## 🔗 Live Demo
+- Hugging Face Space: https://huggingface.co/spaces/petlaz/ai-career-compass
+
+---
+
+## 📚 Table of Contents
+1. [Overview](#-overview)
+2. [Key Features](#-key-features)
+3. [Tech Stack](#-tech-stack)
+4. [Project Structure](#-project-structure)
+5. [Setup & Installation](#️-setup--installation)
+6. [Docker Deployment](#-docker-deployment)
+7. [Live Job Ingestion](#-live-job-ingestion-scaffolding)
+8. [Learning Path Generator](#-learning-path-generator)
+9. [User Profiles](#-user-profiles-persistence)
+10. [Example Output](#-example-output)
+11. [Roadmap](#-roadmap--checklist)
+12. [Author](#-author)
+13. [License](#-license)
+14. [Clone & Run Locally](#-clone--run-locally)
 
 ---
 
@@ -41,6 +71,16 @@ Built on transformer-based embeddings and hybrid similarity scoring, the platfor
 - **🧭 Learning Path Generator** – Stage recommended resources into Discover → Build → Apply pathways.
 - **🐳 Dockerized Deployment** – Build-and-run container for a consistent, portable runtime.
 - **🍎 Mac-Friendly** – CPU-only stack (no CUDA) for seamless macOS development.
+
+---
+
+## 🛠 Tech Stack
+
+- **Language & Runtime:** Python 3.11, virtualenv
+- **Modeling:** SentenceTransformers, PyTorch (CPU wheels), FAISS
+- **Data Layer:** pandas, NumPy, pdfplumber, custom CSV/JSON datasets
+- **Application:** Gradio 4.x, Plotly, Hugging Face Spaces
+- **Ops & Packaging:** Docker, huggingface_hub CLI
 
 ---
 
@@ -79,7 +119,7 @@ ai_career_compass/
 ### 1. Clone & Create a Virtual Environment
 
 ```bash
-git clone https://github.com/<yourusername>/ai_career_compass.git
+git clone https://huggingface.co/spaces/petlaz/ai-career-compass.git
 cd ai_career_compass
 python3 -m venv .venv
 source .venv/bin/activate
@@ -263,3 +303,18 @@ Python, Pandas, machine learning, deep learning
 ## ⚖️ License
 
 MIT License © 2025 – Peter Ugonna Obi
+
+---
+
+## 🧩 Clone & Run Locally
+
+You can clone and run this project locally on macOS or any CPU-based environment.
+
+```bash
+git clone https://huggingface.co/spaces/petlaz/ai-career-compass.git
+cd ai-career-compass
+pip install -r requirements.txt
+python app/gradio_app.py
+```
+
+The Gradio app will start locally at 👉 http://127.0.0.1:7860
