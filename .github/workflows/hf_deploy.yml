@@ -1,0 +1,26 @@
+# GitHub Action: Deploy the main branch to Hugging Face Space automatically.
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git config --global user.email "peterugonnaobi@example.com"
+          git config --global user.name "Peter Ugonna Obi"
+          git remote add hf https://huggingface.co/spaces/petlaz/ai-career-compass || true
+          git fetch hf || true
+          git push hf main --force
+
+
+
