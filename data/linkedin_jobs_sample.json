@@ -1,0 +1,18 @@
+[
+  {
+    "role_title": "Senior Machine Learning Engineer",
+    "company": "TechNova AI",
+    "location": "Remote (US)",
+    "description": "Lead the development of production-grade ML systems focused on recommendation and personalization.",
+    "skills_required": ["Python", "TensorFlow", "MLOps", "AWS", "CI/CD"],
+    "url": "https://www.linkedin.com/jobs/view/1234567890"
+  },
+  {
+    "role_title": "Generative AI Researcher",
+    "company": "Creativity Labs",
+    "location": "Berlin, Germany",
+    "description": "Explore multimodal generative models and collaborate with product teams to ship new creative tooling.",
+    "skills_required": ["PyTorch", "Diffusion Models", "Transformers", "Python"],
+    "url": "https://www.linkedin.com/jobs/view/1234567891"
+  }
+]

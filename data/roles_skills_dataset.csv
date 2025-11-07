@@ -1,0 +1,11 @@
+role_title,skills_required,description,industry
+Machine Learning Engineer,"[""Python"",""TensorFlow"",""Docker""]","Build and deploy ML models.",Tech
+Data Scientist,"[""Python"",""Pandas"",""SQL""]","Analyze data and build predictive models.",Tech
+AI Developer,"[""PyTorch"",""APIs"",""Deep Learning""]","Implement AI-powered applications.",Tech
+MLOps Engineer,"[""Docker"",""Kubernetes"",""CI/CD""]","Automate ML model pipelines.",Tech
+NLP Engineer,"[""Transformers"",""Python"",""HuggingFace""]","Develop and fine-tune language models.",Tech
+Data Engineer,"[""Python"",""Spark"",""SQL""]","Build and maintain data infrastructure.",Tech
+Data Analyst,"[""Excel"",""Pandas"",""Power BI""]","Visualize and interpret datasets.",Tech
+Computer Vision Engineer,"[""OpenCV"",""PyTorch"",""CNNs""]","Design image recognition systems.",Tech
+AI Researcher,"[""TensorFlow"",""Deep Learning"",""NLP""]","Explore and test novel AI models.",Tech
+Analytics Engineer,"[""dbt"",""SQL"",""BigQuery""]","Model and monitor analytics pipelines.",Tech

@@ -1,0 +1,32 @@
+# Bytecode / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Python tooling
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Model/data artifacts
+data/embeddings.pkl
+data/embeddings.index
+data/embeddings.index.json
+data/roles_skills_with_jobs.csv
+data/snapshots/
+
+# Logs
+*.log
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

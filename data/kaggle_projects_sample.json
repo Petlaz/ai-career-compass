@@ -1,0 +1,26 @@
+[
+  {
+    "role_title": "Kaggle Competition Mentor",
+    "company": "Kaggle Community",
+    "location": "Global",
+    "description": "Mentor community members tackling advanced Kaggle competitions in forecasting and NLP.",
+    "skills_required": ["Python", "LightGBM", "Feature Engineering", "SQL"],
+    "url": "https://www.kaggle.com/competitions/example-forecasting",
+    "extras": {
+      "project_type": "Competition",
+      "dataset": "example-forecasting"
+    }
+  },
+  {
+    "role_title": "Open-Source LLM Fine-Tuning Project",
+    "company": "Kaggle Projects",
+    "location": "Remote",
+    "description": "Collaborate on fine-tuning open LLMs for instruction-following tasks and publish best practices.",
+    "skills_required": ["Transformers", "PyTorch", "LoRA", "Weights & Biases"],
+    "url": "https://www.kaggle.com/datasets/example-llm-finetuning",
+    "extras": {
+      "project_type": "Dataset",
+      "dataset": "example-llm-finetuning"
+    }
+  }
+]

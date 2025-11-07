@@ -1,0 +1,20 @@
+[
+  {
+    "type": "course",
+    "title": "Deep Learning Specialization (Coursera)",
+    "skills": ["Neural Networks", "TensorFlow"],
+    "url": "https://www.coursera.org/specializations/deep-learning"
+  },
+  {
+    "type": "project",
+    "title": "Retail Sales Forecasting with XGBoost",
+    "skills": ["Python", "Time Series", "XGBoost"],
+    "url": "https://github.com/yourusername/rossmann-forecasting"
+  },
+  {
+    "type": "course",
+    "title": "Data Engineering Zoomcamp",
+    "skills": ["SQL", "Airflow", "Docker"],
+    "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp"
+  }
+]
