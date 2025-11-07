@@ -18,9 +18,10 @@ jobs:
         run: |
           git config --global user.email "peterugonnaobi@example.com"
           git config --global user.name "Peter Ugonna Obi"
-          git remote add hf https://huggingface.co/spaces/petlaz/ai-career-compass || true
+
+          # Hugging Face expects the account username in the remote URL for authentication.
+          git remote remove hf || true
+          git remote add hf https://Petlaz:${HF_TOKEN}@huggingface.co/spaces/petlaz/ai-career-compass
+
           git fetch hf || true
           git push hf main --force
-
-
-
