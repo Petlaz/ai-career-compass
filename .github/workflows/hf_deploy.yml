@@ -13,6 +13,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           lfs: true
+          fetch-depth: 0
 
       - name: Install Git LFS
         run: |
@@ -29,5 +30,6 @@ jobs:
           git remote remove hf || true
           git remote add hf https://Petlaz:${HF_TOKEN}@huggingface.co/spaces/petlaz/ai-career-compass
 
-          git fetch hf || true
+          git fetch hf main || git fetch hf
+          git reset --soft hf/main || true
           git push hf main --force
