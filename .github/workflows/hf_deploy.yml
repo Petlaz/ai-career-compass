@@ -19,17 +19,17 @@ jobs:
         run: |
           git lfs install --local
 
-      - name: Push to Hugging Face Space
+      - name: Deploy to Hugging Face Space via CLI
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git config --global user.email "peterugonnaobi@example.com"
-          git config --global user.name "Peter Ugonna Obi"
+          echo "🔧 Installing Hugging Face Hub CLI..."
+          pip install "huggingface_hub[cli]>=0.24.0"
 
-          # Hugging Face expects the account username in the remote URL for authentication.
-          git remote remove hf || true
-          git remote add hf https://Petlaz:${HF_TOKEN}@huggingface.co/spaces/petlaz/ai-career-compass
+          echo "🚀 Uploading and triggering rebuild..."
+          huggingface-cli upload . petlaz/ai-career-compass \
+            --repo-type space \
+            --commit-message "Auto-deploy from GitHub $(date)"
 
-          git fetch hf main || git fetch hf
-          git reset --soft hf/main || true
-          git push hf main --force
+          huggingface-cli space restart petlaz/ai-career-compass
+          echo "✅ Space rebuild triggered successfully via API."
